@@ -1,3 +1,3 @@
-Mox.defmock(Keebs.MockRawInput, for: Keebs.RawInput)
-Application.put_env(:keebs, :raw_input, Keebs.MockRawInput)
+Application.put_env(:keebs, :raw_input, Keebs.FakeRawInput)
+Keebs.FakeRawInput.start_link()
 ExUnit.start()

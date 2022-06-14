@@ -21,8 +21,7 @@ defmodule Keebs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.25.0"},
-      {:mox, "~> 1.0", only: :test}
+      {:rustler, "~> 0.25.0"}
     ]
   end
 end
